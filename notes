@@ -7,6 +7,8 @@ git push origin v0.0.1
 // clone a version
 git clone --depth 1 --branch v0.0.1 https://github.com/tcp-x/cd-user.git
 
+go build -buildmode=plugin -o User.so
+
 /*
 Publish is used by developers to register module
   - get url

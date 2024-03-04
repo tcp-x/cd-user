@@ -1,3 +1,3 @@
 # cd-user
-
-v0.0.1
+cd-user golang plugin
+v0.0.3

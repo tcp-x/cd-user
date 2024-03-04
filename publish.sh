@@ -1,13 +1,17 @@
-Version="v0.0.2"
-sourceFile="user.go"
-projDir="~/cd-user/user.go"
-
-cd $projDir
+# get current repository latest version
+echo "current repository latest version:\n"
+git ls-remote --tags https://github.com/tcp-x/cd-user.git
+# cd-cli plugin compile 
+go build -buildmode=plugin -o User.so
+# set latest version
+Version="v0.0.3"
 go mod tidy
-git add $sourceFile
-git commit -m "set version $Version"
+git submodule update --remote
+git add cd.go go.mod go.sum user.go User.so
+git add -A
+git commit -a -m "set version $Version"
 git tag $Version
 git push origin $Version
 
-# cd-cli mod publish 
+
 
