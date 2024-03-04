@@ -4,10 +4,12 @@ import (
 	"fmt"
 
 	"github.com/tcp-x/cd-core/sys/base"
-	"github.com/tcp-x/cd-core/sys/user"
+	moduleUser "github.com/tcp-x/cd-core/sys/user"
 )
 
-func Login(data string) string {
+type user string
+
+func (contriller user) Login(data string) string {
 	fmt.Println("User::Auth()/input data:", data)
 	resp := data
 	return resp
@@ -16,13 +18,13 @@ func Login(data string) string {
 /*
 - Consider auth using public-key signed by corpdesk CA
 */
-func Auth(data string) string {
+func (contriller user) Auth(data string) string {
 	fmt.Println("User::Auth()/input data:", data)
 	modReq := `{
 		           "ctx": "Sys",
 		           "m": "Moduleman",
 		           "c": "CdObj",
-		           "a": "Get",
+		           "a": "GetCdObj",
 		           "dat": {
 		               "f_vals": [
 		                   {
@@ -49,7 +51,7 @@ func Auth(data string) string {
 	// Auth input should have username and password
 
 	// test if /tcp-x/user/session is accessible
-	sid := user.SessID()
+	sid := moduleUser.SessID()
 	fmt.Println("cd-user/Auth(): SessionID:", sid)
 
 	resp := "{name:User, version:0.0.7 publisher: \"EMP Services Ltd\"}"
@@ -59,8 +61,10 @@ func Auth(data string) string {
 /*
 - Present varifiable email address
 */
-func Register(data string) string {
+func (contriller user) Register(data string) string {
 	fmt.Println("User::Auth()/input data:", data)
 	resp := "{name:User, version:0.0.7 publisher: \"EMP Services Ltd\"}"
 	return resp
 }
+
+var User user

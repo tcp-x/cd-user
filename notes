@@ -29,3 +29,10 @@ Publish is used by developers to register module
   - req test designed by corpdesk team
   - version
 */
+
+Note that it would have been logical to produce session.go and group.go. 
+This can become necessary only if there is compelling reason to
+access session and group via json string query from corpdesk client apps. 
+At the moment this has not been necessitated. 
+Meanwhile access to session and group methods will be programatically accessisibe
+via cd-core/sys/user modules. 
