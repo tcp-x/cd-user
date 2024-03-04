@@ -8,10 +8,10 @@ echo $(pwd)
 go build -buildmode=plugin -o ../plugin/User.so user.go
 cd ../session/
 echo $(pwd)
-go build -buildmode=plugin -o ../plugin/Session.so ./session/session.go
+go build -buildmode=plugin -o ../plugin/Session.so session.go
 
 # set latest version
-Version="v0.0.9"
+Version="v0.0.10"
 go mod tidy
 git submodule update --remote
 git add go.mod user/user.go plugin/User.so session/session.go plugin/Session.so
