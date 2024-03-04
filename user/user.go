@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/tcp-x/cd-core/sys/base"
-	moduleUser "github.com/tcp-x/cd-core/sys/user"
+	"github.com/tcp-x/cd-core/sys/user"
 )
 
 func Login(data string) string {
@@ -49,7 +49,7 @@ func Auth(data string) string {
 	// Auth input should have username and password
 
 	// test if /tcp-x/user/session is accessible
-	sid := moduleUser.SessID()
+	sid := user.SessID()
 	fmt.Println("cd-user/Auth(): SessionID:", sid)
 
 	resp := "{name:User, version:0.0.7 publisher: \"EMP Services Ltd\"}"

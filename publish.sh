@@ -3,8 +3,10 @@ echo "current repository latest version:\n"
 git ls-remote --tags https://github.com/tcp-x/cd-user.git
 
 # cd-cli plugin compile 
-go build -buildmode=plugin -o ./plugin/User.so ./user/user.go
-go build -buildmode=plugin -o ./plugin/Session.so ./session/session.go
+cd ./user/
+go build -buildmode=plugin -o ../plugin/User.so user.go
+cd ../session/
+go build -buildmode=plugin -o ../plugin/Session.so ./session/session.go
 
 # set latest version
 Version="v0.0.8"
