@@ -3,7 +3,7 @@ module github.com/tcp-x/cd-user
 go 1.21.5
 
 require (
-	github.com/tcp-x/cd-core/sys/base v0.0.0-20240303191630-979c8b5f45d4
+	github.com/tcp-x/cd-core/sys/base v0.0.0-20240303210619-63469384dd74
 	github.com/tcp-x/cd-core/sys/user v0.0.0-20240303210619-63469384dd74
 )
 
