@@ -12,7 +12,7 @@ go build -buildmode=plugin -o ../plugins/Session.so session.go
 cd ..
 
 # set latest version
-Version="v0.0.12"
+Version="v0.0.13"
 go mod tidy
 git submodule update --remote
 git add go.mod user/user.go plugin/User.so session/session.go plugin/Session.so
