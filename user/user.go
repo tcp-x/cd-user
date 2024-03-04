@@ -46,6 +46,27 @@ func Auth(data string) string {
 	}
 	fmt.Println("Moduleman response:", modResp)
 
+	// get user and anon data
+	// 1. convert req to struct
+	reqStruct, err := base.JSONToICdRequest(data)
+	if err != nil {
+		fmt.Println("Error:", err)
+		return ""
+	}
+
+	// Accessing fields of MyStruct
+	fmt.Println("Module:", reqStruct.M)
+	fmt.Println("Dat:", reqStruct.Dat)
+
+	// this.plData = this.b.getPlData(req);
+	//     const q: IQuery = {
+	//         // get requested user and 'anon' data/ anon data is used in case of failure
+	//         where: [
+	//             { userName: this.plData.userName },
+	//             { userName: "anon" }
+	//         ]
+	//     };
+
 	// connect to db and check validity of password
 	// Auth input should have username and password
 
