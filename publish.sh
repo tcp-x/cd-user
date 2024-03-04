@@ -5,11 +5,11 @@ git ls-remote --tags https://github.com/tcp-x/cd-user.git
 # cd-cli plugin compile 
 cd ./user/
 go build -buildmode=plugin -o ../plugin/User.so user.go
-cd ../session/
+cd ./session/
 go build -buildmode=plugin -o ../plugin/Session.so ./session/session.go
 
 # set latest version
-Version="v0.0.8"
+Version="v0.0.9"
 go mod tidy
 git submodule update --remote
 git add go.mod user/user.go plugin/User.so session/session.go plugin/Session.so
