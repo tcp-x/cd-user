@@ -39,6 +39,7 @@ func Auth(data string) string {
 	// test access to moduleman plugin
 	// access is via base.ExecPlug() which should be method available at the base
 	// Example: var resp string = base.ExecPlug(args[0])
+	fmt.Println("***Starting ExecPlug() at user:")
 	modResp, err := base.ExecPlug(modReq)
 	if err != nil {
 		fmt.Println("Error executing user plugin:", err)

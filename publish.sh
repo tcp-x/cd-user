@@ -5,10 +5,10 @@ git ls-remote --tags https://github.com/tcp-x/cd-user.git
 # cd-cli plugin compile 
 cd ./user/
 echo $(pwd)
-go build -buildmode=plugin -o ../plugin/User.so user.go
+go build -buildmode=plugin -o ../plugins/User.so user.go
 cd ../session/
 echo $(pwd)
-go build -buildmode=plugin -o ../plugin/Session.so session.go
+go build -buildmode=plugin -o ../plugins/Session.so session.go
 cd ..
 
 # set latest version
