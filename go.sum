@@ -21,12 +21,16 @@ github.com/tcp-x/cd-core/sys/base v0.0.0-20240315224507-f5c71e35935e h1:tGxIXnhi
 github.com/tcp-x/cd-core/sys/base v0.0.0-20240315224507-f5c71e35935e/go.mod h1:ZHT3t0E18S9ed8cwAbCVhjhFCjGzrRd2tVERIlyvWDc=
 github.com/tcp-x/cd-core/sys/base v0.0.0-20240319045754-8995bdb46d03 h1:b5qJdGqb2CqR2nn43HVi7WmGlsrc28rqHPpTbER4CPY=
 github.com/tcp-x/cd-core/sys/base v0.0.0-20240319045754-8995bdb46d03/go.mod h1:vvAcbKOF6e3Kgb1Jql4MTW/gX1kBoFgTDNDrodHoZG0=
+github.com/tcp-x/cd-core/sys/base v0.0.0-20240319045759-d6d463720a3d h1:5pHx2ivutjUIZWwfr0sVGpNZZp1zNTL4/Lr0LEHI99A=
+github.com/tcp-x/cd-core/sys/base v0.0.0-20240319045759-d6d463720a3d/go.mod h1:vvAcbKOF6e3Kgb1Jql4MTW/gX1kBoFgTDNDrodHoZG0=
 github.com/tcp-x/cd-core/sys/user v0.0.0-20240315223714-2ea6060721e9 h1:ISB9MSL6wXcDm6Tj0PeA2aQlC5BrSWy7tJ0lC3ILoYI=
 github.com/tcp-x/cd-core/sys/user v0.0.0-20240315223714-2ea6060721e9/go.mod h1:SQQbv7SxOTpr/SFYVQG6b6mu/et5cTDQ1jbXqHzLkqU=
 github.com/tcp-x/cd-core/sys/user v0.0.0-20240315224507-f5c71e35935e h1:C2KYoovcS5dPZuqU23Ut8LY2m5JPZU6OOVFHYyUwvz4=
 github.com/tcp-x/cd-core/sys/user v0.0.0-20240315224507-f5c71e35935e/go.mod h1:SQQbv7SxOTpr/SFYVQG6b6mu/et5cTDQ1jbXqHzLkqU=
 github.com/tcp-x/cd-core/sys/user v0.0.0-20240319045754-8995bdb46d03 h1:P5KCaZcWgU70ijNKWgFGwxW5xVP7Dys6maE8LdJkj8Q=
 github.com/tcp-x/cd-core/sys/user v0.0.0-20240319045754-8995bdb46d03/go.mod h1:yRNTV6bbk5I/B5DlY9kcb8U84HXDtOn1daYft3Rs4D0=
+github.com/tcp-x/cd-core/sys/user v0.0.0-20240319045759-d6d463720a3d h1:s2MzZ+1/K9qlHIKdSkfoEDcIcDQpAMMVtfTgNlfW5/s=
+github.com/tcp-x/cd-core/sys/user v0.0.0-20240319045759-d6d463720a3d/go.mod h1:yRNTV6bbk5I/B5DlY9kcb8U84HXDtOn1daYft3Rs4D0=
 golang.org/x/crypto v0.21.0 h1:X31++rzVUdKhX5sWmSOFZxx8UW/ldWx55cbf08iNAMA=
 golang.org/x/crypto v0.21.0/go.mod h1:0BP7YvVV9gBbVKyeTG0Gyn+gZm94bibOW5BjDEYAOMs=
 golang.org/x/sys v0.0.0-20220811171246-fbc7d0a398ab/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=

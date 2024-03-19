@@ -11,8 +11,8 @@ require (
 	github.com/joho/godotenv v1.5.1 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
-	github.com/tcp-x/cd-core/sys/base v0.0.0-20240319045754-8995bdb46d03 // indirect
-	github.com/tcp-x/cd-core/sys/user v0.0.0-20240319045754-8995bdb46d03 // indirect
+	github.com/tcp-x/cd-core/sys/base v0.0.0-20240319045759-d6d463720a3d // indirect
+	github.com/tcp-x/cd-core/sys/user v0.0.0-20240319045759-d6d463720a3d // indirect
 	golang.org/x/crypto v0.21.0 // indirect
 	golang.org/x/sys v0.18.0 // indirect
 	gorm.io/driver/mysql v1.5.4 // indirect

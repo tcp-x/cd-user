@@ -7,6 +7,8 @@ import (
 	"github.com/tcp-x/cd-core/sys/user"
 )
 
+var logger base.Logger
+
 type CdRequest struct {
 	Req string
 }
@@ -44,10 +46,10 @@ type User struct{}
   - @param res
 */
 func (t *User) Auth(req *CdRequest, resp *CdResponse) (string, error) {
-	fmt.Println("UserService::Auth()/req:", req.Req)
+	// fmt.Println("UserService::Auth()/req:", req.Req)
+	logger.LogInfo("UserService::Auth()/req:" + req.Req)
 
 	authResult, err := user.Auth(req.Req)
-	user.
 	if err != nil {
 		fmt.Println("Error:", err)
 		return "", err
