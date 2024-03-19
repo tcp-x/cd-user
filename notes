@@ -1,3 +1,5 @@
+This is an RPC user conduit to user module business logics
+
 go mod tidy
 git add user.go
 git commit -m "set version v0.0.1"
@@ -36,3 +38,44 @@ access session and group via json string query from corpdesk client apps.
 At the moment this has not been necessitated. 
 Meanwhile access to session and group methods will be programatically accessisibe
 via cd-core/sys/user modules. 
+
+////////////////////////
+15th Mar 2024
+Before now this project was testing use of hashicorp plugin strategy
+Directories included:
+├── go.mod
+├── go.sum
+├── notes
+├── plugins
+│   ├── Session.so
+│   └── User.so
+├── pub-config.json
+├── publish.sh
+├── README.md
+├── session
+│   ├── go.mod
+│   └── session.go
+└── user
+    ├── go.mod
+    ├── go.sum
+    └── user.go
+
+We are yet to go through with hashicorp plugin strtegy.
+
+Following current success with golang rpc using txp-x/cd-rpc project consumed by cd-cli,
+we are now merging sources for cd-rpc by including the 
+directories:
+- client
+- server
+- service
+from cd-rpc to have this project so as to try a full cd authentication via rpc.
+This test assumes that cd applications/module will then be packaged as 
+rpc services which will then be dicoverable with current name convention.
+In this case this project will eventually be discoverable via the name 'cd-user'.
+The previous naming convention if adhered to, this project will be renamed 'User'
+
+Careful consideration on merging the projects:
+- how to utilize the 'service' directory
+- how to access other controllers eg 'session'
+
+-
