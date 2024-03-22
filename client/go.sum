@@ -15,12 +15,6 @@ github.com/mattn/go-colorable v0.1.13/go.mod h1:7S9/ev0klgBDR4GtXTXX8a3vIGJpMovk
 github.com/mattn/go-isatty v0.0.16/go.mod h1:kYGgaQfpe5nmfYZH+SKPsOc2e4SrIfOl2e/yFXSvRLM=
 github.com/mattn/go-isatty v0.0.20 h1:xfD0iDuEKnDkl03q4limB+vH+GxLEtL/jb4xVJSWWEY=
 github.com/mattn/go-isatty v0.0.20/go.mod h1:W+V8PltTTMOvKvAeJH7IuucS94S2C6jfK/D7dTCTo3Y=
-github.com/tcp-x/cd-core/sys/base v0.0.0-20240322085104-79e7a37e6f2b h1:OpzBQQKbtiJWEJj+tfb1ZzpcBlsKEloLfIJn5e1hwg4=
-github.com/tcp-x/cd-core/sys/base v0.0.0-20240322085104-79e7a37e6f2b/go.mod h1:vvAcbKOF6e3Kgb1Jql4MTW/gX1kBoFgTDNDrodHoZG0=
-github.com/tcp-x/cd-core/sys/user v0.0.0-20240322085104-79e7a37e6f2b h1:P79n16nhaQyOXHzUibx9uXiWfJNh2C/bvV6ysaDOIGk=
-github.com/tcp-x/cd-core/sys/user v0.0.0-20240322085104-79e7a37e6f2b/go.mod h1:yRNTV6bbk5I/B5DlY9kcb8U84HXDtOn1daYft3Rs4D0=
-github.com/tcp-x/cd-rpc/service v0.0.0-20240315190231-b79c33294bbc h1:DlPr1lN5N2RaAmzsNuxTVVUIIdeXrBX2ViAXOwBRrJ4=
-github.com/tcp-x/cd-rpc/service v0.0.0-20240315190231-b79c33294bbc/go.mod h1:D/6pWsZL8P+87GjFM8MI7ljXba/NQM2VpJZmD1u44II=
 golang.org/x/crypto v0.21.0 h1:X31++rzVUdKhX5sWmSOFZxx8UW/ldWx55cbf08iNAMA=
 golang.org/x/crypto v0.21.0/go.mod h1:0BP7YvVV9gBbVKyeTG0Gyn+gZm94bibOW5BjDEYAOMs=
 golang.org/x/sys v0.0.0-20220811171246-fbc7d0a398ab/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
