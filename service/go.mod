@@ -2,7 +2,7 @@ module github.com/tcp-x/cd-rpc/service
 
 go 1.21.5
 
-require github.com/tcp-x/cd-core/sys/base v0.0.0-20240319045759-d6d463720a3d
+require github.com/tcp-x/cd-core/sys/base v0.0.0-20240319134224-6f42fa4942b6
 
 require golang.org/x/crypto v0.21.0 // indirect
 
